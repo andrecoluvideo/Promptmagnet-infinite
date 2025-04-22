@@ -57,6 +57,13 @@
     .content {
       padding: 40px 5vw;
       background-color: #0a0a0a;
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      align-items: flex-start;
+    }
+    .content-text {
+      flex: 1;
     }
     .content h2 {
       font-size: 1.8rem;
@@ -72,6 +79,14 @@
       color: #00ffee;
       margin-right: 8px;
     }
+    .content iframe {
+      flex-shrink: 0;
+      width: 100%;
+      max-width: 500px;
+      height: 300px;
+      border: none;
+      border-radius: 12px;
+    }
   </style>
 </head>
 <body>
@@ -85,14 +100,17 @@
   </section>
 
   <section class="content">
-    <h2>Cosa contiene il Pack:</h2>
-    <ul>
-      <li>100 prompt avanzati divisi per stile: Trap, Cinema, Cartoon, Anime, Dark, Fashion</li>
-      <li>Guida pratica in PDF per trasformare una tua foto in un personaggio originale</li>
-      <li>Sezione dedicata alla creazione di animazioni da contenuti statici</li>
-      <li>Template per caption virali e script per Reels</li>
-      <li>Risultati testati per TikTok, Instagram e Telegram</li>
-    </ul>
+    <div class="content-text">
+      <h2>Cosa contiene il Pack:</h2>
+      <ul>
+        <li>100 prompt avanzati divisi per stile: Trap, Cinema, Cartoon, Anime, Dark, Fashion</li>
+        <li>Guida pratica in PDF per trasformare una tua foto in un personaggio originale</li>
+        <li>Sezione dedicata alla creazione di animazioni da contenuti statici</li>
+        <li>Template per caption virali e script per Reels</li>
+        <li>Risultati testati per TikTok, Instagram e Telegram</li>
+      </ul>
+    </div>
+    <iframe src="https://www.youtube.com/embed/MRERD-NNNDs" title="Secondo video demo" allowfullscreen></iframe>
   </section>
 </body>
 </html>
