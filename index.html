@@ -13,6 +13,8 @@
       color: #ffffff;
       line-height: 1.6;
     }
+    a { text-decoration: none; color: inherit; }
+
     .hero {
       display: flex;
       flex-direction: row;
@@ -20,17 +22,20 @@
       align-items: center;
       padding: 5vw;
       background-color: #000;
+      flex-wrap: wrap;
     }
     .hero-text {
-      max-width: 50%;
+      flex: 1;
+      min-width: 280px;
+      padding: 20px;
     }
     .hero h1 {
-      font-size: 3.5rem;
-      line-height: 1.1;
+      font-size: 2.8rem;
+      line-height: 1.2;
     }
     .hero p {
       margin: 20px 0;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
     .hero a {
       display: inline-block;
@@ -48,22 +53,30 @@
       background-color: #00ccbb;
     }
     .hero iframe {
-      width: 100%;
+      flex: 1;
       max-width: 500px;
-      height: 300px;
+      width: 100%;
+      height: 280px;
       border: none;
       border-radius: 12px;
     }
+
     .content {
       padding: 40px 5vw;
       background-color: #0a0a0a;
       display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    .content-block {
+      display: flex;
       flex-direction: row;
       gap: 40px;
-      align-items: flex-start;
+      flex-wrap: wrap;
     }
     .content-text {
       flex: 1;
+      min-width: 280px;
     }
     .content h2 {
       font-size: 1.8rem;
@@ -80,13 +93,14 @@
       margin-right: 8px;
     }
     .content iframe {
-      flex-shrink: 0;
-      width: 100%;
+      flex: 1;
       max-width: 500px;
-      height: 300px;
+      width: 100%;
+      height: 280px;
       border: none;
       border-radius: 12px;
     }
+
     .conversion {
       padding: 40px 5vw;
       background-color: #111;
@@ -101,6 +115,19 @@
     .conversion strong {
       color: #00ffee;
     }
+
+    @media (max-width: 768px) {
+      .hero, .content-block {
+        flex-direction: column;
+        align-items: center;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p, .hero a {
+        font-size: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -114,17 +141,19 @@
   </section>
 
   <section class="content">
-    <div class="content-text">
-      <h2>Cosa contiene il Pack:</h2>
-      <ul>
-        <li>100 prompt avanzati divisi per stile: Trap, Cinema, Cartoon, Anime, Dark, Fashion</li>
-        <li>Guida pratica in PDF per trasformare una tua foto in un personaggio originale</li>
-        <li>Sezione dedicata alla creazione di animazioni da contenuti statici</li>
-        <li>Template per caption virali e script per Reels</li>
-        <li>Risultati testati per TikTok, Instagram e Telegram</li>
-      </ul>
+    <div class="content-block">
+      <div class="content-text">
+        <h2>Cosa contiene il Pack:</h2>
+        <ul>
+          <li>100 prompt avanzati divisi per stile: Trap, Cinema, Cartoon, Anime, Dark, Fashion</li>
+          <li>Guida pratica in PDF per trasformare una tua foto in un personaggio originale</li>
+          <li>Sezione dedicata alla creazione di animazioni da contenuti statici</li>
+          <li>Template per caption virali e script per Reels</li>
+          <li>Risultati testati per TikTok, Instagram e Telegram</li>
+        </ul>
+      </div>
+      <iframe src="https://www.youtube.com/embed/MRERD-NNNDs" title="Secondo video demo" allowfullscreen></iframe>
     </div>
-    <iframe src="https://www.youtube.com/embed/MRERD-NNNDs" title="Secondo video demo" allowfullscreen></iframe>
   </section>
 
   <section class="conversion">
