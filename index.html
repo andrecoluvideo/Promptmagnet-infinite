@@ -123,6 +123,28 @@
       border-radius: 12px;
     }
 
+    .carousel {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+    .carousel-container {
+      display: flex;
+      gap: 20px;
+      animation: scroll 30s linear infinite;
+    }
+    .carousel-container img {
+      width: 300px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
     .bonus {
       padding: 60px 5vw;
       background-color: #141414;
@@ -201,8 +223,25 @@
         <p>Se vuoi restare nel rumore, ignora questa pagina. Ma se vuoi <strong>diventare un riferimento visivo</strong>, qui è dove si inizia.</p>
       </div>
     </div>
+
     <div class="conversion-videos">
       <iframe src="https://www.youtube.com/embed/dsGYssP1shA" title="Secondo video demo" allowfullscreen></iframe>
+
+      <div class="carousel">
+        <div class="carousel-container">
+          <img src="/img1.jpg" alt="img1">
+          <img src="/img2.jpg" alt="img2">
+          <img src="/img3.jpg" alt="img3">
+          <img src="/img4.jpg" alt="img4">
+          <img src="/img5.jpg" alt="img5">
+          <img src="/img6.jpg" alt="img6">
+          <img src="/img7.jpg" alt="img7">
+          <img src="/img8.jpg" alt="img8">
+          <img src="/img9.jpg" alt="img9">
+          <img src="/img10.jpg" alt="img10">
+        </div>
+      </div>
+
       <iframe src="https://www.youtube.com/embed/MRERD-NNNDs" title="Terzo video demo" allowfullscreen></iframe>
     </div>
   </section>
@@ -217,4 +256,3 @@
   </div>
 </body>
 </html>
-
