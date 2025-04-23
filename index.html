@@ -111,7 +111,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 40px;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
     }
     .conversion p {
@@ -124,11 +124,17 @@
       flex: 1;
       min-width: 280px;
     }
-    .conversion iframe {
+    .conversion-videos {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
       flex: 1;
-      max-width: 500px;
+      min-width: 280px;
+    }
+    .conversion iframe {
+      max-width: 100%;
       width: 100%;
-      height: 280px;
+      height: 240px;
       border: none;
       border-radius: 12px;
     }
@@ -179,7 +185,10 @@
       <p>Chi lo ha capito, lo ha già usato per creare contenuti virali, presentazioni da urlo, pitch visuali, video animati e identità fortissime.</p>
       <p>Se vuoi restare nel rumore, ignora questa pagina. Ma se vuoi <strong>diventare un riferimento visivo</strong>, qui è dove si inizia.</p>
     </div>
-    <iframe src="https://www.youtube.com/embed/dsGYssP1shA" title="Secondo video demo" allowfullscreen></iframe>
+    <div class="conversion-videos">
+      <iframe src="https://www.youtube.com/embed/dsGYssP1shA" title="Secondo video demo" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/MRERD-NNNDs" title="Terzo video demo" allowfullscreen></iframe>
+    </div>
   </section>
 </body>
 </html>
