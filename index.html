@@ -73,6 +73,7 @@
       flex-direction: row;
       gap: 40px;
       flex-wrap: wrap;
+      align-items: flex-start;
     }
     .content-text {
       flex: 1;
@@ -101,25 +102,6 @@
       border-radius: 12px;
     }
 
-    .conversion {
-      padding: 40px 5vw;
-      background-color: #111;
-      font-size: 1.2rem;
-      text-align: left;
-      max-width: 1000px;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-      align-items: flex-start;
-      justify-content: space-between;
-    }
-    .conversion p {
-      margin-bottom: 20px;
-    }
-    .conversion strong {
-      color: #00ffee;
-    }
     .conversion-text {
       flex: 1;
       min-width: 280px;
@@ -140,7 +122,7 @@
     }
 
     @media (max-width: 768px) {
-      .hero, .content-block, .conversion {
+      .hero, .content-block {
         flex-direction: column;
         align-items: center;
       }
@@ -175,17 +157,14 @@
           <li>Risultati testati per TikTok, Instagram e Telegram</li>
         </ul>
       </div>
+      <div class="conversion-text">
+        <p><strong>50 euro</strong> per un pacchetto che può cambiare completamente la tua identità online, creare contenuti da copertina, animare il tuo profilo, distinguerti con stile e professionalità. Non è un semplice file: è uno <strong>strumento di potere visivo</strong>.</p>
+        <p>Hai mai speso 50 euro in qualcosa che ti ha portato 10 follower o 0 contenuti? Questo invece è un <strong>investimento unico</strong> per creare qualcosa che parla per te, mentre tu fai altro.</p>
+        <p>Chi lo ha capito, lo ha già usato per creare contenuti virali, presentazioni da urlo, pitch visuali, video animati e identità fortissime.</p>
+        <p>Se vuoi restare nel rumore, ignora questa pagina. Ma se vuoi <strong>diventare un riferimento visivo</strong>, qui è dove si inizia.</p>
+      </div>
     </div>
-  </section>
-
-  <section class="conversion">
-    <div class="conversion-text">
-      <p><strong>50 euro</strong> per un pacchetto che può cambiare completamente la tua identità online, creare contenuti da copertina, animare il tuo profilo, distinguerti con stile e professionalità. Non è un semplice file: è uno <strong>strumento di potere visivo</strong>.</p>
-      <p>Hai mai speso 50 euro in qualcosa che ti ha portato 10 follower o 0 contenuti? Questo invece è un <strong>investimento unico</strong> per creare qualcosa che parla per te, mentre tu fai altro.</p>
-      <p>Chi lo ha capito, lo ha già usato per creare contenuti virali, presentazioni da urlo, pitch visuali, video animati e identità fortissime.</p>
-      <p>Se vuoi restare nel rumore, ignora questa pagina. Ma se vuoi <strong>diventare un riferimento visivo</strong>, qui è dove si inizia.</p>
-    </div>
-    <div class="conversion-videos">
+    <div class="conversion-videos" style="margin-top: 40px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
       <iframe src="https://www.youtube.com/embed/dsGYssP1shA" title="Secondo video demo" allowfullscreen></iframe>
       <iframe src="https://www.youtube.com/embed/MRERD-NNNDs" title="Terzo video demo" allowfullscreen></iframe>
     </div>
