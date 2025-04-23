@@ -102,47 +102,27 @@
       border-radius: 12px;
     }
 
-    .conversion-text {
-      flex: 1;
-      min-width: 280px;
-    }
-    .conversion-videos {
+    .media-row {
       display: flex;
       flex-direction: row;
-      gap: 20px;
       justify-content: center;
+      align-items: center;
       flex-wrap: wrap;
-      margin-top: 40px;
-    }
-    .conversion iframe {
-      flex: 1;
-      max-width: 500px;
-      width: 100%;
-      height: 280px;
-      border: none;
-      border-radius: 12px;
-    }
-
-    .carousel {
-      width: 100%;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      margin-top: 40px;
-    }
-    .carousel-container {
-      display: flex;
       gap: 20px;
-      animation: scroll 30s linear infinite;
+      margin-top: 40px;
     }
-    .carousel-container img {
-      width: 300px;
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+      padding: 10px;
+      max-width: 400px;
+    }
+    .carousel img {
+      width: 120px;
+      height: 120px;
       border-radius: 12px;
       object-fit: cover;
-    }
-    @keyframes scroll {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
     }
 
     .bonus {
@@ -178,7 +158,7 @@
     }
 
     @media (max-width: 768px) {
-      .hero, .content-block, .conversion-videos {
+      .hero, .content-block, .media-row {
         flex-direction: column;
         align-items: center;
       }
@@ -224,24 +204,20 @@
       </div>
     </div>
 
-    <div class="conversion-videos">
+    <div class="media-row">
       <iframe src="https://www.youtube.com/embed/dsGYssP1shA" title="Secondo video demo" allowfullscreen></iframe>
-
       <div class="carousel">
-        <div class="carousel-container">
-          <img src="/img1.jpg" alt="img1">
-          <img src="/img2.jpg" alt="img2">
-          <img src="/img3.jpg" alt="img3">
-          <img src="/img4.jpg" alt="img4">
-          <img src="/img5.jpg" alt="img5">
-          <img src="/img6.jpg" alt="img6">
-          <img src="/img7.jpg" alt="img7">
-          <img src="/img8.jpg" alt="img8">
-          <img src="/img9.jpg" alt="img9">
-          <img src="/img10.jpg" alt="img10">
-        </div>
+        <img src="/img1.jpg" alt="img1">
+        <img src="/img2.jpg" alt="img2">
+        <img src="/img3.jpg" alt="img3">
+        <img src="/img4.jpg" alt="img4">
+        <img src="/img5.jpg" alt="img5">
+        <img src="/img6.jpg" alt="img6">
+        <img src="/img7.jpg" alt="img7">
+        <img src="/img8.jpg" alt="img8">
+        <img src="/img9.jpg" alt="img9">
+        <img src="/img10.jpg" alt="img10">
       </div>
-
       <iframe src="https://www.youtube.com/embed/MRERD-NNNDs" title="Terzo video demo" allowfullscreen></iframe>
     </div>
   </section>
