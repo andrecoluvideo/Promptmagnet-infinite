@@ -108,21 +108,55 @@
     }
     .conversion-videos {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       gap: 20px;
-      flex: 1;
-      min-width: 280px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 40px;
     }
     .conversion iframe {
-      max-width: 100%;
+      flex: 1;
+      max-width: 500px;
       width: 100%;
-      height: 240px;
+      height: 280px;
       border: none;
       border-radius: 12px;
     }
 
+    .bonus {
+      padding: 60px 5vw;
+      background-color: #141414;
+      text-align: center;
+    }
+    .bonus h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .bonus p {
+      font-size: 1.2rem;
+    }
+
+    .cta-mobile {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #00ffee;
+      color: #000;
+      text-align: center;
+      padding: 15px 20px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      z-index: 1000;
+    }
+    .cta-mobile a {
+      color: #000;
+      text-decoration: none;
+    }
+
     @media (max-width: 768px) {
-      .hero, .content-block {
+      .hero, .content-block, .conversion-videos {
         flex-direction: column;
         align-items: center;
       }
@@ -131,6 +165,9 @@
       }
       .hero p, .hero a {
         font-size: 1rem;
+      }
+      .cta-mobile {
+        display: block;
       }
     }
   </style>
@@ -164,10 +201,20 @@
         <p>Se vuoi restare nel rumore, ignora questa pagina. Ma se vuoi <strong>diventare un riferimento visivo</strong>, qui è dove si inizia.</p>
       </div>
     </div>
-    <div class="conversion-videos" style="margin-top: 40px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+    <div class="conversion-videos">
       <iframe src="https://www.youtube.com/embed/dsGYssP1shA" title="Secondo video demo" allowfullscreen></iframe>
       <iframe src="https://www.youtube.com/embed/MRERD-NNNDs" title="Terzo video demo" allowfullscreen></iframe>
     </div>
   </section>
+
+  <section class="bonus">
+    <h2>Bonus inclusi</h2>
+    <p>Con ogni acquisto ricevi contenuti extra esclusivi: preset visivi, modelli personalizzati e accesso anticipato ai futuri update!</p>
+  </section>
+
+  <div class="cta-mobile">
+    <a href="https://andrecoluvideo.gumroad.com/l/promptmagnet-infinite" target="_blank">🎯 SCARICA ORA – CREA SENZA LIMITI</a>
+  </div>
 </body>
 </html>
+
